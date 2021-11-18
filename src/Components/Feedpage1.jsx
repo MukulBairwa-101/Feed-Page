@@ -56,7 +56,9 @@ const Feedpage1 = () => {
         setPost1(post.sort((a, b) => b.shares - a.shares));
         setPost(post1);
     }
-
+    const showDetail=()=>{
+        
+    }
     return (
         <div className="component_wrapper">
                  <h3>Recent Posts</h3>
@@ -85,7 +87,7 @@ const Feedpage1 = () => {
                                      <p> Published  At {el.event_date}</p>
                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos deserunt, repellendus suscipit eveniet illum  Explicabo.  </p>
                                 </header>
-                                <Link to ="/"  > Read More</Link>
+                                <Link to ="/" onClick={(el)=>showDetail(el)} > Read More</Link>
                                 <div className="count_btn">
                                     <span><GrFormView />{el.views}</span>
                                     <span><FcLike/> {el.likes}</span>
