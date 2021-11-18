@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+import React ,{useEffect} from "react"
+import { Routes,Route,Link} from "react-router-dom";
+import Feedpage1 from './Components/Feedpage1';
+import Feedpage2 from './Components/Feedpage2';
+import Feedpage3 from "./Components/Feedpage3";
 import './App.css';
 
+const PaginationTabs =()=>{
+  return(
+    <ul>
+      <li><Link to ="/page1">1</Link></li>
+      <li><Link to ="/page2">2</Link></li>
+      <li><Link to ="/page3">3</Link></li>  
+    </ul>
+  )
+}
 function App() {
+  // useEffect(() => {
+
+  // }, [])
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+     Feed is loading.....
+     <Routes> 
+       <Route exact path ="/" element ={<Feedpage1 />} />
+       <Route exact path ="/page1" element ={<Feedpage1 />} />
+       <Route exact path ="/page2" element ={<Feedpage2 />} />
+       <Route exact path ="/page3" element ={<Feedpage3 />} />
+    </Routes>
+     <PaginationTabs />
     </div>
   );
 }

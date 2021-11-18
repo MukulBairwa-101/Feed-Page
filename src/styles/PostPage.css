@@ -1,0 +1,22 @@
+/* component_wrappers */
+.component_wrapper {
+    max-width: 100%;
+    margin:2rem auto;
+    background-color: rgb(216, 216, 216);
+
+}
+.postlist_wrapper{
+    max-width:80%;
+}
+/* alignment */
+.postdata_wrapper{
+    display: flex;
+}
+/* alignment */
+/* component_wrappers */
+
+.post_card{
+    background-color: #fff;
+    border-radius:.5rem;
+    
+}
