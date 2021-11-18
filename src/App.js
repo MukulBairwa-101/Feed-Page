@@ -3,6 +3,8 @@ import { Routes,Route,Link} from "react-router-dom";
 import Feedpage1 from './Components/Feedpage1';
 import Feedpage2 from './Components/Feedpage2';
 import Feedpage3 from "./Components/Feedpage3";
+import Footer from "./Components/Footer";
+import logo from "./Assets/images/logo.png";
 import './App.css';
 
 const PaginationTabs =()=>{
@@ -24,7 +26,9 @@ function App() {
   
   return (
     <div className="App">
-     Feed is loading.....
+     <header className="nav">
+       <img  src={logo} alt ="logo"/>
+     </header>
      <Routes> 
        <Route exact path ="/" element ={<Feedpage1 />} />
        <Route exact path ="/page1" element ={<Feedpage1 />} />
@@ -32,6 +36,7 @@ function App() {
        <Route exact path ="/page3" element ={<Feedpage3 />} />
     </Routes>
      <PaginationTabs />
+     <Footer />
     </div>
   );
 }

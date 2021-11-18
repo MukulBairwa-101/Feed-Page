@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
   max-width: 100%;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 .tabs_holder{
   max-width: 100%;
@@ -21,21 +24,51 @@
   color:black;
   background-color: rgb(235, 235, 235);
 }
+.nav{
+  max-width:100%;
 
-
-/* .sortBtn_holder{
-  padding-right: 1rem;
-  width:100%;
-  margin:1rem 5rem 0rem 0rem;
+  
 }
-.btn-s{
-  font-size: 2rem;
-  padding:2rem;
-  width:100%;
-  font-weight: 600;
-  cursor: pointer;
-} */
-/* .sortBtn_holder button:focus{
-  outline: .2rem solid rgb(75, 143, 211);
-  border-radius: .2rem;
-} */
+.nav img{
+  width:8%;
+  margin-left: 3rem;
+}
+.footer{
+  max-width:100%;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+  padding:.1rem;
+  font-size: .8rem;
+  color:#fff;
+}
+
+
+
+/* Responsiveness */
+@media screen and (max-width: 400px ) and ( min-width:150px){
+  .tabs_holder{
+    max-width: 80%;
+    font-size: .8rem;
+  }
+  .nav img{
+    width:40%;
+    margin-left: 5rem;
+  }
+}
+@media  screen and (max-width: 700px ) and ( min-width:401px){
+  .tabs_holder{
+    max-width: 80%;
+    font-size: 1rem;
+  }
+  .nav img{
+    width:40%;
+    margin-left: 200px;
+  }
+}
+@media  screen and (max-width: 980px ) and ( min-width:701px){
+  .nav img{
+    width:30%;
+    margin-left: 250px;
+  }
+}
+/* Responsiveness */

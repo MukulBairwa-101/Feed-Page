@@ -4,6 +4,7 @@
     margin:2rem auto;
     background-color: rgb(216, 216, 216);
 
+
 }
 .postlist_wrapper{
     max-width:70%;
@@ -30,14 +31,21 @@
 .post_img{
     width:40%;
     background-color: rgb(7, 46, 85);
+    position: relative;
+    padding-top: 56.25%
 }
 .post_img img{
-    width:100%;
+    /* width: 100%; */
+    height: 200px;
     padding: .2rem;
     margin: 1rem 0rem 1rem 2.5rem;
     /* height:80%; */
     object-fit:cover;
     display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
     
 }
 .post_detail {
@@ -59,7 +67,8 @@
 .component_wrapper  h3{
     margin: 1rem 2.5rem;
     font-size: 2rem;
-    color: rgb(49, 49, 49);
+    /* color: rgb(49, 49, 49); */
+    color:rgb(255, 246, 246);
 }
 .postlist_wrapper ul{
     list-style: none;
@@ -94,3 +103,133 @@ margin: 1rem .2rem;
     font-size: 1.5rem;
     color:rgb(49, 49, 49);
 }
+
+/* Responsiveness */
+@media  screen and (max-width: 400px ) and ( min-width:150px) {
+    .sortBtn_holder{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .post_card{
+        background-color: #fff;
+        border-radius:.5rem;    
+        width:90%;   
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .post_img{
+        width:100%;
+        background-color: rgb(7, 46, 85);
+    }
+    .post_img img{
+        width:70%;
+        /* height:80%; */
+        object-fit:cover;
+        display: block;
+        margin-left: 1.8rem;
+        
+    }
+    .post_detail {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+        text-align: center ;
+        margin:.5rem;
+    }
+    .count_btn{
+        width:100%;
+        display: flex;
+
+
+    }
+    .count_btn span{
+        font-size: .8rem;
+    }
+  }  
+  @media  screen and (max-width: 700px ) and ( min-width:401px){
+    .sortBtn_holder{
+        display: flex;
+        justify-content: space-around;
+    }
+    .post_card{
+        background-color: #fff;
+        border-radius:.5rem;    
+        width:90%;   
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .post_img{
+        width:100%;
+        background-color: rgb(7, 46, 85);
+    }
+    .post_img img{
+        width:70%;
+        object-fit:cover;
+        display: block;
+        margin:1rem auto;
+        
+    }
+    .post_detail {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+        text-align: center ;
+        margin:.5rem;
+    }
+    .count_btn{
+        width:100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .count_btn span{
+        font-size: .9rem;
+    }
+  }  
+  @media  screen and (max-width: 980px ) and ( min-width:701px){
+    .sortBtn_holder{
+        display: flex;
+        justify-content: space-around;
+    }
+    .post_card{
+        background-color: #fff;
+        border-radius:.5rem;    
+        width:90%;   
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .post_img{
+        width:100%;
+        background-color: rgb(7, 46, 85);
+    }
+    .post_img img{
+        width:60%;
+        object-fit:cover;
+        display: block;
+        margin:1rem auto;
+        
+    }
+    .post_detail {
+        display: flex;
+        flex-direction: column;
+        font-size: .8rem;
+        text-align: center ;
+        margin:.5rem;
+    }
+    .count_btn{
+        width:100%;
+        display: flex;
+        justify-content: center;
+
+    }
+    .count_btn span{
+        font-size: .8rem;
+    }
+}
+
+/* Responsiveness */
+

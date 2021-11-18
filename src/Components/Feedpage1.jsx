@@ -14,14 +14,21 @@ const Feedpage1 = () => {
     const [post,setPost] = globalState.value1;
     // const sortByDate = globalState.value2;
     const [post1,setPost1]= useState([]);
-
+    const[error,setError]= useState(false);
     useEffect(() => {
+
        const loadPage1 = async ()=>{
        const responseData = await fetch("http://www.mocky.io/v2/59b3f0b0100000e30b236b7e")
        .then(responseData=>responseData.json())
        .then(data =>setPost(data.posts))
+       localStorage.setItem("post",JSON.stringify(post));
+       if(!responseData){
+            setError(true);
+       }
+       else setError(false)
         // console.log("fetched post ", post);        
        }
+
        
        loadPage1();  
     //    sortByDate();
@@ -53,7 +60,7 @@ const Feedpage1 = () => {
     return (
         <div className="component_wrapper">
                  <h3>Recent Posts</h3>
-                 <div className="sortBtn_holder">
+             <div className="sortBtn_holder">
                  <Button variant="contained" color="primary" className="btn-s" onClick={()=>sortByDate()}>Date</Button>
                  <Button variant="contained"  color="primary"  className="btn-s"onClick={()=>sortByShares()}>Shares</Button>
                  <Button  variant="contained"  color="primary" className="btn-s"onClick={()=>sortByViews()}>Views</Button>
@@ -78,7 +85,7 @@ const Feedpage1 = () => {
                                      <p> Published  At {el.event_date}</p>
                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos deserunt, repellendus suscipit eveniet illum  Explicabo.  </p>
                                 </header>
-                                <Link to ="/"> Read More</Link>
+                                <Link to ="/"  > Read More</Link>
                                 <div className="count_btn">
                                     <span><GrFormView />{el.views}</span>
                                     <span><FcLike/> {el.likes}</span>
