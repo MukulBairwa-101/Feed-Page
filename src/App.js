@@ -7,10 +7,13 @@ import './App.css';
 
 const PaginationTabs =()=>{
   return(
-    <ul>
+    
+    <ul className="tabs_holder">
+      <li> prev </li>
       <li><Link to ="/page1">1</Link></li>
       <li><Link to ="/page2">2</Link></li>
       <li><Link to ="/page3">3</Link></li>  
+      <li>next</li>
     </ul>
   )
 }
