@@ -7,6 +7,7 @@ import Footer from "./Components/Footer";
 import logo from "./Assets/images/logo.png";
 import './App.css';
 
+
 const PaginationTabs =()=>{
   return(
     
@@ -20,10 +21,7 @@ const PaginationTabs =()=>{
   )
 }
 function App() {
-  // useEffect(() => {
 
-  // }, [])
-  
   return (
     <div className="App">
      <header className="nav">

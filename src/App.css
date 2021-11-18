@@ -42,8 +42,23 @@
   color:#fff;
 }
 
-
-
+.loader-o{
+  height: 500px;
+}
+.loader {
+  border: 5px solid #f3f3f3; 
+  border-top: 5px solid #0562a0; 
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin-left: 600px;
+  animation: spin 4s linear infinite;
+}
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 /* Responsiveness */
 @media screen and (max-width: 400px ) and ( min-width:150px){
   .tabs_holder{
