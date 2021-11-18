@@ -31,20 +31,13 @@
 .post_img{
     width:40%;
     background-color: rgb(7, 46, 85);
-    position: relative;
-    padding-top: 56.25%
 }
 .post_img img{
-    /* width: 100%; */
     height: 200px;
     padding: .2rem;
     margin: 1rem 0rem 1rem 2.5rem;
-    /* height:80%; */
     object-fit:cover;
     display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 100%;
     
 }
