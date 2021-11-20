@@ -7,6 +7,7 @@ import  { AppContext }  from '../Context/AppContext'
 import Button from "@material-ui/core/Button"
 import {Link} from "react-router-dom"
 import Loader from "../Components/Loader";
+import BottomSheet from 'react-bottom-sheet';
 
 
 import "../styles/PostPage.css";
@@ -31,10 +32,9 @@ const Feedpage1 = () => {
        }
 
        
-       loadPage1();  
-    //    sortByDate();
+    loadPage1();  
     setPost1(post);
-      
+
     }, [])
 
     const sortByDate =()=>{
@@ -87,7 +87,9 @@ const Feedpage1 = () => {
                                  <p> Published  At {el.event_date}</p>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos deserunt, repellendus suscipit eveniet illum  Explicabo.  </p>
                             </header>
-                            <Link to ={`/page1/${el.id}`}  > Read More</Link>
+                            {/* <Link to ={`/page1/${el.id}`}  > Read More</Link> */}
+                            <button  className="btn-rm">Read more</button>
+
                             <div className="count_btn">
                                 <span><GrFormView />{el.views}</span>
                                 <span><FcLike/> {el.likes}</span>
@@ -107,13 +109,8 @@ const Feedpage1 = () => {
             
                 
             </div>
-
-           
      </div>      
-            
-           
-         
-        </div>
+</div>
     )
 }
 

@@ -76,11 +76,14 @@
 .post_detail h4{
     color:rgb(6, 44, 82);
 }
-.post_detail a{
-    text-decoration: none;
+.btn-rm{
     letter-spacing:.1rem;
     color: rgb(78, 78, 78);
     margin-bottom: .5rem;
+    width:20%;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
 }
 .count_btn{
     width:80%;
@@ -93,8 +96,10 @@ margin: 1rem .2rem;
 
 }
 .post_title{
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color:rgb(49, 49, 49);
+    width:50%;
+    
 }
 
 /* Responsiveness */
@@ -171,6 +176,7 @@ margin: 1rem .2rem;
         font-size: .8rem;
         text-align: center ;
         margin:.5rem;
+        max-width:400px;
     }
     .count_btn{
         width:100%;
