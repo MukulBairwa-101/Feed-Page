@@ -83,11 +83,13 @@ const Feedpage1 = () => {
                         <div className="post_detail">
                             <h2 className="post_title">{el.event_name}</h2>
                             <header>
-                                 <h4> <CgProfile /> {el.id} </h4>
+                           
+                                
+                                 <h4 > <CgProfile  /> {el.id} </h4>
+                               
                                  <p> Published  At {el.event_date}</p>
                                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, eos deserunt, repellendus suscipit eveniet illum  Explicabo.  </p>
                             </header>
-                            {/* <Link to ={`/page1/${el.id}`}  > Read More</Link> */}
                             <button  className="btn-rm">Read more</button>
 
                             <div className="count_btn">

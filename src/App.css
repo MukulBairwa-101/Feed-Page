@@ -27,12 +27,20 @@
   background: #4d0b8a; 
 }
 
+a{
+  text-decoration: none;
+  color:gray;
+  cursor:pointer;
+}
+
 .tabs_holder{
   max-width: 100%;
   margin:1rem auto;
   list-style: none;
   display: flex;
   justify-content: center;
+  align-items: center;
+ 
 }
 .tabs_holder li{
   padding: 1rem ;
@@ -42,17 +50,18 @@
   text-decoration: none;
   color:rgb(17, 106, 196);
 }
-.tabs_holder li a:hover{
-  color:black;
-  background-color: rgb(235, 235, 235);
+
+.active{
+  background-color: rgb(32, 32, 32);
 }
 .nav{
   max-width:100%;
-
+  display: flex;
+  align-items: center;
   
 }
 .nav img{
-  width:8%;
+  width:6%;
   margin-left: 3rem;
 }
 .footer{
@@ -89,8 +98,8 @@
     font-size: .8rem;
   }
   .nav img{
-    width:40%;
-    margin-left: 5rem;
+    width:20%;
+    margin-left: 10px;
   }
 }
 @media  screen and (max-width: 700px ) and ( min-width:401px){
@@ -99,14 +108,14 @@
     font-size: 1rem;
   }
   .nav img{
-    width:40%;
-    margin-left: 200px;
+    width:15%;
+    margin-left: 0px;
   }
 }
 @media  screen and (max-width: 980px ) and ( min-width:701px){
   .nav img{
-    width:30%;
-    margin-left: 250px;
+    width:10%;
+    margin-left:10px;
   }
 }
 /* Responsiveness */

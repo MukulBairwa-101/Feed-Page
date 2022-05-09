@@ -1,13 +1,13 @@
 /* component_wrappers */
 .component_wrapper {
     max-width: 100%;
-    margin:2rem auto;
+    margin:0rem auto ;
     background-color: rgb(216, 216, 216);
 
 
 }
 .postlist_wrapper{
-    max-width:70%;
+    max-width:100%;
     margin:1rem auto;
 }
 
@@ -19,8 +19,8 @@
 .sortBtn_holder{
     display: flex;
     margin: 2.5rem auto;
-    justify-content: space-around;
-    width:25%;
+    justify-content: space-between;
+    width:50%;
 }
 
 .btn-s{
@@ -106,7 +106,9 @@ margin: 1rem .2rem;
 @media  screen and (max-width: 400px ) and ( min-width:150px) {
     .sortBtn_holder{
         display: flex;
-        flex-direction: column;
+        width: 90%;
+        margin: 0rem auto;
+
     }
 
     .post_card{
@@ -149,7 +151,9 @@ margin: 1rem .2rem;
   @media  screen and (max-width: 700px ) and ( min-width:401px){
     .sortBtn_holder{
         display: flex;
-        justify-content: space-around;
+        width: 90%;
+        margin: 0rem auto;
+
     }
     .post_card{
         background-color: #fff;
@@ -191,15 +195,16 @@ margin: 1rem .2rem;
   @media  screen and (max-width: 980px ) and ( min-width:701px){
     .sortBtn_holder{
         display: flex;
-        justify-content: space-around;
+        width: 90%;
+        margin: 0rem auto;
+
     }
     .post_card{
         background-color: #fff;
         border-radius:.5rem;    
         width:90%;   
         display: flex;
-        justify-content: space-between;
-        flex-direction: column;
+        flex-direction: row;
     }
     .post_img{
         width:100%;
